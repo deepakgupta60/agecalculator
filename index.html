@@ -1,11 +1,45 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="css/styles.css">
-        <title>Hello world</title>
-    </head>
-    <body>
-        <p>goodl</p>
 
-        <script src="script.js"></script>
-    </body>
+<head>
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Hello world</title>
+</head>
+
+<body>
+    <div class="content">
+
+        <div class="input">
+
+            <label>Day</label>
+
+            <input type="text" id="dayIn" placeholder="DD" />
+            <span class="error" id="dayError"></span>
+            
+            <label>Month</label>
+            <input type="text" id="monthIn" placeholder="MM" />
+            <span class="error" id="monthError"></span>
+
+            <label>Year</label>
+            <input type="text" id="yearIn" placeholder="YYYY" />
+            <span class="error" id="yearError"></span>
+        </div>
+
+        <button type="button" id="calculateBtn">Submit</button>
+
+        <p class="error"></p>
+
+
+        <div class="result">
+            <p> <span id="yearOut">--</span>years</p> 
+            <p> <span id="monthOut">--</span>months</p> 
+            <p> <span id="dayOut">--</span>days</p> 
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+
+</body>
+
 </html>
